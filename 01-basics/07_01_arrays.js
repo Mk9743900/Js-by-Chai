@@ -28,3 +28,7 @@ const myn2 = myArray.splice(1,3)//its removes the elements from the array
 console.log(`Slice ${myn1}`)// Slice 1,2
 console.log(`Splice ${myn2}`);// Splice 1,2,3
 console.log(myArray)//[ 0, 4, 5 ]  after the splice
+
+// ////////
+
+
