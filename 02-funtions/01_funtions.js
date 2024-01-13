@@ -37,3 +37,13 @@ function handleObj(anyobj) {
     console.log(`This is the ${anyobj.name} ,my age is ${anyobj.age}`);
 }
 handleObj(obj)
+
+const newArray = [200,100,500,600]//how to handle array in funtions 
+function handleArr(getArray) {
+    return getArray[2]
+}
+console.log(handleArr(newArray))
+//
+//Scope****
+
+
