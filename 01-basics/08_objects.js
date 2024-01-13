@@ -38,3 +38,5 @@ const users = [
     name= "khan"
 ]
 // to get keys and values we use .funtion ,we get values in array format
+
+

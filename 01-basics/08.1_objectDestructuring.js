@@ -6,5 +6,6 @@ const course = {
     courseInstructor : "hitesh"
 }
 
-const {courseInstructor} = course
-console.log(course); 
+const {courseInstructor} = course//this is the syntax for DeStructuring
+console.log(courseInstructor); 
+
