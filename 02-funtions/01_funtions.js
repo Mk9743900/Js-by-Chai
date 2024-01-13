@@ -22,5 +22,18 @@ function loginUserMessage(userName ="Sam"){
     }
     return `${userName} just logged in`;
 }
-console.log(loginUserMessage())//if user name is not give then it is undefined.
+console.log(loginUserMessage("khan"))//if user name is not give then it is undefined.
 
+function calculateCartPrice(...numX) {
+    return numX
+}
+console.log(calculateCartPrice(30,100,300,5000));
+//
+const obj = {
+    name : "khan",
+    age : 25
+}
+function handleObj(anyobj) {
+    console.log(`This is the ${anyobj.name} ,my age is ${anyobj.age}`);
+}
+handleObj(obj)
