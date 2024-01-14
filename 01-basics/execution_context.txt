@@ -1,0 +1,36 @@
+JavaScript execution conteXt// JEC
+
+Global EC is "this."
+Funtion EC 
+Eval EC ==its a property of GEC
+
+//
+1st, memory creation phase 
+2nd, execution phase
+
+//
+//Global EC (this)
+let val1 = 1   //memory phase (val1=undefined,val2 = undefined)
+let val2 = 5
+
+funtion addNum(num1 ,num2){     //addNum = funtion created
+    let total = num1 + num2     
+    return total
+}
+let result1 = addNum(val1,val2) //result1 =undefined then it calls addnum funtion
+let result2 = addNum(10,20)     //result2 = undefined
+
+execution phase 
+for result1
+num1 = 10
+num2 = 5
+total = 15
+then it return to Global EC 
+then it goes to result1
+after that it all gets deleted
+
+for result2
+
+memory phase 
+then it all gets repeated  for result2 also
+
