@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom | Chai aur code</title>
+</head>
+<body style="background-color: black;color: aqua;">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thuresday</div>
+    </div>
+    
+</body>
+<script>
+    const parent = document.querySelector(".parent")
+    // console.log(parent);
+    // console.log(parent.children);
+    // **we write .childern to get into the div which are present inside the parent class.
+
+    // console.log(parent.children[1].innerHTML);
+
+    // for (let i = 0; i < parent.children.length; i++) {
+    //     console.log(parent.children[i].innerHTML);
+    // }
+    // **this is basic for loop to aces the elemnet inside the parent class.
+
+
+    // parent.children[0].style.color = "orange"
+    // console.log(parent.firstElementChild);
+    // ** (.firstElememtChild) will get u the first element of the parent class
+
+    const dayOne = document.querySelector('.day')
+    // console.log(dayOne);
+    // console.log(dayOne.parentElement);
+    // by using (.parentElement) we can go its parent class
+
+    // console.log(dayOne.nextElementSibling);
+    // by using(.nextElementSibiling) we can move to its next element
+
+    // console.log("NODES: ", parent.childNodes);
+    // <!--NodeList(9) [text, div.day, text, div.day, text, div.day, text, div.day, text]
+    // 0: text = this is space we gave after the div parent calss
+    // 1: div.day = this what we defined
+    // 2: text
+    // 3: div.day
+    // 4: text
+    // 5: div.day
+    // 6: text
+    // 7: div.day
+    // 8: text
+    // length: 9
+    // [[Prototype]]: NodeList  -->
+</script>
+
+</html>
