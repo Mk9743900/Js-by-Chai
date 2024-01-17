@@ -9,6 +9,7 @@
     
 </body>
 <script>
+    //creating new element
     const div = document.createElement('div')
     console.log(div);
     div.className = 'main'
@@ -16,6 +17,9 @@
     div.setAttribute("title","generated Title")
     div.style.backgroundColor = "green"
     // div.innerText = "Chai aur Code"
-    document.createTextNode
+    const addText = document.createTextNode("chai")
+    div.appendChild(addText)
+
+    document.body.appendChild(div)//attach the new element to the html body
 </script>
 </html>
