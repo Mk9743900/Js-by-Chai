@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aynsc</title>
+</head>
+<body>
+    <h1>This is First html</h1>
+    <button>Stop</button>
+    <script>
+        const sayKhan = ()=>{
+            console.log("LoveKhan");
+        }
+        // setTimeout(function() {
+        //     console.log('Khan')
+        // }, 2000);
+        setTimeout(sayKhan,2000);
+
+        const changeInnerHtml= ()=>document.querySelector('h1').innerHTML = 'This is Second HTML '
+        const changeMe = setTimeout(changeInnerHtml,3000)
+
+        //clearTimeout
+        document.querySelector('button').addEventListener('click',()=>{
+            clearTimeout(changeMe)
+            console.log('stopped');
+        })
+
+    </script>
+
+</body>
+</html>
