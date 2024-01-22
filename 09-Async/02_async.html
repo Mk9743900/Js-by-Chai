@@ -13,11 +13,17 @@
 <script>
     const start = document.querySelector('#Start')
     const stop = document.querySelector('#Stop')
-    const print = function(){console.log("hi",Date.now());}
-    const startEvent = setInterval(() => { print()});
-    const stopEvent = clearInterval(startEvent)
-    start.addEventListener('click',()=>{startEvent})
-    stop.addEventListener('click',()=>{stopEvent})
+    const startPrint = ()=>console.log("hi",Date.now());
+    // const startEvent = setInterval(() => { print()});
+    const checkStart = ()=>console.log("Start Clicked")
+    start.addEventListener('click',()=>{
+        checkStart()
+        setInterval(() => {startPrint()});
+    })
+
+
+    stop.addEventListener('click',()=>{
+        console.log("Stop Clicked");})
 
 </script>
 </html>
