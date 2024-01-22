@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is a Start and Stop button test</title>
+</head>
+<body>
+    <h1>Start and Stop</h1>
+    <button id="Start" style="background-color: green;"> Start</button>
+    <button id="Stop" style="background-color: red;"> Stop</button>
+</body>
+<script>
+    const start = document.querySelector('#Start')
+    const stop = document.querySelector('#Stop')
+    const print = function(){console.log("hi",Date.now());}
+    const startEvent = setInterval(() => { print()});
+    const stopEvent = clearInterval(startEvent)
+    start.addEventListener('click',()=>{startEvent})
+    stop.addEventListener('click',()=>{stopEvent})
+
+</script>
+</html>
